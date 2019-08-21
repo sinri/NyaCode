@@ -1,18 +1,7 @@
-let x=require('./javascript/NyaCode');
-console.log(x);
+let x=require('./javascript/HiaCode');
+let coder=x();
 
-let NyaCode=x();
+let origin="la唔OP 繷の👌。-.`:   0+=][\\'\"$&%";
 
-// nyacode.encode("lalala");
-let p=NyaCode.encode("la唔la");
-let q=NyaCode.decode(p);
-
-console.log(p);
-console.log(q);
-
-/*
- * R belongs to [65,90], i.e. [A,Z]
- * code might be [32,126]
- * (R + code) belongs to [97,216]
- * = R + 32 + (code-32)
- */
+console.log(origin);
+console.log(coder.decode(coder.encode(origin)));
